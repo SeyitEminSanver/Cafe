@@ -18,6 +18,7 @@ export class CategoryComponent {
   getCategories() {
     this.categoryService.getCategories().subscribe((response) => {
       this.categories = response.data;
+      
     });
   }
   setCurrentCategory(category:Category){

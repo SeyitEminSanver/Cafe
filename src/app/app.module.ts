@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +13,8 @@ import { NaviComponent } from './componants/navi/navi.component';
 import { VatAddedPipe } from './pipes/vat-added.pipe';
 import { FilterPipePipe } from './pipes/filter-pipe.pipe';
 
+import { ToastrModule } from 'ngx-toastr';
+import { OrderSumaryComponent } from './componants/order-sumary/order-sumary.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +23,19 @@ import { FilterPipePipe } from './pipes/filter-pipe.pipe';
     ProductComponent,
     NaviComponent,
     VatAddedPipe,
-    FilterPipePipe
+    FilterPipePipe,
+    OrderSumaryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    CommonModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot({
+      positionClass:"toast-bottom-right"
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
