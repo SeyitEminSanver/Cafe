@@ -15,6 +15,8 @@ import { FilterPipePipe } from './pipes/filter-pipe.pipe';
 
 import { ToastrModule } from 'ngx-toastr';
 import { OrderSumaryComponent } from './componants/order-sumary/order-sumary.component';
+import { TableComponent } from './componants/table/table.component';
+import { MenuComponent } from './componants/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { OrderSumaryComponent } from './componants/order-sumary/order-sumary.com
     NaviComponent,
     VatAddedPipe,
     FilterPipePipe,
-    OrderSumaryComponent
+    OrderSumaryComponent,
+    TableComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

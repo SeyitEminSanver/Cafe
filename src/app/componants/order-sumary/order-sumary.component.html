@@ -1,19 +1,20 @@
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Ürün ismi</th>
+      <th scope="col">Adet</th>
+      <th scope="col">Fiyat</th>
+     
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let order of orders">
-      <th scope="row">1</th>
+      <td>{{order.productName}}</td>
       <td>{{order.count}}</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>{{order.price}}</td>
+      
     </tr>
+    
    
   </tbody>
 </table>

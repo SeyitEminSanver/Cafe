@@ -1,3 +1,5 @@
+
+ 
 <div *ngIf="dataLoaded==false" class="spinner-border text-dark" role="status">
     <span class="visually-hidden">Loading...</span>
   </div>
@@ -22,10 +24,10 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let product of products  | filterPipe:filterText">
+      <tr *ngFor="let product of products | filterPipe:filterText ">
        
         <td>{{ product.productId }}</td>
-        <td>{{ product.productName | uppercase }}</td>
+        <td>{{ product.productName |uppercase}}</td>
         <td>{{ product.categoryId }} </td>
         <td>₺{{ product.price }}</td>
         <td>{{ product.stock }} Adet</td>

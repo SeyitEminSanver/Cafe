@@ -1,8 +1,9 @@
 import { Product } from "./product";
+import { Table } from "./table";
 
 export class Order{
-    product:Product;
-    orderId:number;
-    customerId:number;
+    productName:string
     count:number
+  
+    price:number
 }

@@ -1,0 +1,12 @@
+
+ <div class="alert alert-success" role="alert" > 
+ <h1>LÜTFEN MASANIZI SEÇİNİZ</h1> 
+        <div   class="row-md-6">
+            <button *ngFor="let table of tables" routerLink="/menu" 
+            class="btn btn-primary btn-lg" 
+            type="buton" style="min-height: 350px; min-width: 350px;">{{table.tableId}}</button>
+          </div>
+ </div> 
+        
+      
+       
